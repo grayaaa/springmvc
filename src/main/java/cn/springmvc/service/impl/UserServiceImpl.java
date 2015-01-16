@@ -10,13 +10,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private UserDAO userDAO;
+//    @Autowired
+//    private UserDAO userDAO;
 
     @Override
     public int insertUser(User user) {
-        // TODO Auto-generated method stub
-        return userDAO.insertUser(user);
+//        // TODO Auto-generated method stub
+//        return userDAO.insertUser(user);
+        return 1;
     }
 
 }
