@@ -17,15 +17,8 @@
     <context:component-scan base-package="cn.springmvc.controller"/>
     <mvc:annotation-driven/>
 
-    <!-- 避免IE在ajax请求时，返回json出现下载 -->
-    <bean id="jacksonMessageConverter"
-          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
-        <property name="supportedMediaTypes">
-            <list>
-                <value>text/html;charset=UTF-8</value>
-            </list>
-        </property>
-    </bean>
+    <!-- 对静态资源文件的访问 不支持访问WEB-INF目录 -->
+    <mvc:default-servlet-handler />
 
     <!-- 对模型视图添加前后缀 -->
     <!-- jsp
