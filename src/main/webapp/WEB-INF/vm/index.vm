@@ -1,0 +1,9 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<html>
+<body>
+<h1>welcome by velocity</h1>
+<h2>${message}</h2>
+</body>
+</html>
+
